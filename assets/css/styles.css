@@ -1,0 +1,150 @@
+/* particleground demo */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #212528;
+}
+
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.intro {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 48px;
+  }
+  h1::after {
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .intro {
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h1::after {
+    height: 6px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 28px;
+  }
+  h1::after {
+    height: 4px;
+  }
+}
+
+img {
+  position: absolute;
+  margin-top: -20%;
+  width: 420px;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+.containimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 32%;
+}
+
+.rondint {
+  -webkit-transition: linear 7s;
+  transition: linear 7s;
+  -webkit-animation: interieur 7s infinite linear;
+          animation: interieur 7s infinite linear;
+}
+
+.rondext {
+  -webkit-transition: linear 7s;
+  transition: linear 7s;
+  -webkit-animation: exterieur 7s both;
+          animation: exterieur 7s both;
+}
+
+.onlybecode {
+  -webkit-transition: linear 7s;
+  transition: linear 7s;
+  -webkit-animation: exterieur 3s both;
+          animation: exterieur 3s both;
+}
+
+@-webkit-keyframes interieur {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes interieur {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes exterieur {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes exterieur {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=styles.css.map */

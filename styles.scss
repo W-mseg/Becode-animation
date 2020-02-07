@@ -1,0 +1,122 @@
+
+/* particleground demo */
+
+* { 
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color:#212528;
+  }
+  
+  
+  
+  #particles {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .intro {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    h1 {
+      font-size: 70px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    h1 {
+      font-size: 48px;
+    }
+    h1::after {
+      height: 8px;
+    }
+  }
+  
+  @media only screen and (max-width: 568px) {
+    .intro {
+      padding: 0 10px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    h1::after {
+      height: 6px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .btn {
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    h1 {
+      font-size: 28px;
+    }
+    h1::after {
+      height: 4px;
+    }
+  }
+
+
+  //starting logo
+img{
+    position: absolute;
+    margin-top: -20%;
+    width: 420px;
+    transition: 5s;
+}
+
+.containimg{
+    display: flex;
+    margin-left: 32%;
+
+}
+.rondint{
+    transition: linear 7s;
+    animation: interieur 7s infinite linear;
+}
+.rondext{
+    transition: linear 7s;
+    animation: exterieur 7s both linear
+}
+.onlybecode{
+    transition: linear 7s;
+    animation: exterieur 3s both;
+}
+@keyframes interieur{
+0%{
+  
+    transform: rotate(0deg);
+}
+100%{
+    transform: rotate(-360deg);
+}
+
+}
+@keyframes exterieur{
+0%{
+    transform: rotate(0deg);
+
+}
+100%{
+    transform: rotate(360deg);
+}
+
+}
+
